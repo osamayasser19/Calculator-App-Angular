@@ -8,12 +8,18 @@
 </div>
 <div class="main">
   <div class="calc-card">
-    <input
-      class="result"
-      #input
-      (keydown.enter)="input.value = calcOperation(input.value)"
-    />
-
+    <div class="result-container">
+      <input
+        class="result"
+        #input
+        (keydown.enter)="input.value = calcOperation(input.value)"
+      />
+      <app-primary-button
+        [operator]="'C'"
+        [size]="'clear-button'"
+        (click)="input.value = ''"
+      ></app-primary-button>
+    </div>
     <div class="numbers">
       @for (item of numbers; track $index) { @if
       (item=='+'||item=='*'||item=='/'||item=='-'||item=='=') {
