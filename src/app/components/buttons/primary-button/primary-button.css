@@ -1,0 +1,21 @@
+.primary-button {
+  font-size: xx-large;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #D4D4D2;
+  color: #000000;
+  width: 90px;
+  height: 95px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.primary-button:hover {
+  opacity: 80%;
+}
+
+.primary-color {
+  background-color: #FF9500;
+  color: #FFFFFF;
+}
